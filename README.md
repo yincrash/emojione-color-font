@@ -153,13 +153,24 @@ Chrome will use the fallback black and white emoji.*
 
 ## Install on Windows
 
-The font installs like any other font and can be specifically selected, but
-the system will default to the `Segoe UI Emoji` font. Get the current version
-from: https://github.com/eosrei/emojione-color-font/releases
+There are two install options for OS X. Both SVGinOT versions are available
+from releases: https://github.com/eosrei/emojione-color-font/releases
 
-Help wanted: [How to override the Windows default Segoe UI Emoji font][16]
+1. `EmojiOneColor-SVGinOT-1.2.zip` - The regular version of the font
+   installs like any other font and can be specifically selected, but Windows
+   will default to the `Segoe UI Emoji` font for emojis.
+2. `EmojiOneColor-SVGinOT-Win-1.2.zip` - Because Windows 7, 8, 10 use Emoji in
+   both Segoe UI Symbol and Segoe UI Emoji, to be the default emoji, we need to
+   replace both, but keep the existing symbol characters from Segoe UI Symbol.
+   This package contains an install script that will generate both fonts (or
+   in Windows 7, just Segoe UI Symbol), and install them for you. Running the
+   install script requires both [Python (2 or 3)][16] and FontTools (which can be
+   installed using `pip install fonttools` once Python is installed).
 
-[16]:https://github.com/eosrei/emojione-color-font/issues/15
+[16]:https://www.python.org/downloads/windows/
+
+*Reiterating: Only FireFox supports the SVGinOT color emoji for now. Safari and
+Chrome will use the fallback black and white emoji.*
 
 ## Building
 Overview:
